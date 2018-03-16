@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #b27b4e;
+}
+
+header {
+    height: 200px;
+}
+header > img {
+    height: 150px;
+    display: block;
+    margin: 25px auto;
+    background-color: #b27b4e
+}
+
+nav {
+    text-align: center;
+}
+
+nav > span {
+    display: inline-block;
+    margin: 15px 30px;
+    font-size: 1.3em;
+}
