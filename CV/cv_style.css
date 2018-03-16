@@ -1,0 +1,438 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Barlow Condensed', serif, sans-serif;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+header {
+	text-align: right;
+	background-image: url("images/It-Background.png");
+	background-position: center;
+	padding: 10px 30px;
+	opacity: 0.9;
+	color: #c7dbf9;
+	right: 10px;
+	left: 10px;
+	position: fixed;
+	z-index: 5;
+	border-radius: 10px;
+}
+
+
+body {
+	background-color: #c7dbf9;
+	padding: 10px;
+	margin: 0;
+	font-family: 'Barlow Condensed';font-size: 22px;
+	
+}
+
+
+
+
+.contain {
+	position: fixed;
+	top: 200px;
+	bottom: 70px;
+	z-index: 4;
+	overflow: scroll;
+	overflow-x: auto;
+}
+article {
+	margin-top: 0;
+	padding-top: 0;
+	padding: 10px 30px;
+	left: 400px;
+	right: 10px;
+	background-color: white;
+	border-radius: 10px;
+}
+footer {
+	font-size: 18px;
+	font-style: italic;
+	position: fixed;
+	bottom: 1px;
+	background-color: #c7dbf9;
+	z-index: 5;
+	padding: 10px;
+	font-size: 17px;
+	width: 100%;
+	height: 70px;
+	text-align: center;
+}
+
+hr {
+	width: 99%;
+	margin: auto;
+	color: #2b70e2;
+}
+
+table {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid;
+	background-color: #5394fc;
+}
+
+tr,th,td {
+	border: 1px solid;
+	padding: 5px;
+	background-color: #adc9f7;
+}
+
+li {
+	margin-left: 50px;
+}
+
+article > hr {
+	margin: 20px;
+}
+.lang {
+	font-weight: bold;
+}
+
+
+
+#arrow {
+	position: fixed;
+	bottom: 75px;
+	right: 40px;
+	z-index: 10;
+}
+
+.tech {
+	font-weight: bold;
+	margin: 10px 0;
+	font-size: 28px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+}
+aside > h2 {
+	margin-top: 40px;
+}
+.lang_lvl {
+	position: relative;
+	margin-left: 70px;
+}
+li > span {
+	line-height: 150%;
+}
+.soft {
+	border: solid 5px #1264ea;
+	padding: 5px;
+	border-radius: 10px;
+	line-height: 50px;
+	background-color: #c7dbf9;
+	white-space:nowrap;
+	text-align: center;
+}
+
+#soft_container {
+	text-align: center;
+}
+
+
+iframe {
+	text-align: center;
+	border: solid 5px #1264ea;
+	padding: 5px;
+	border-radius: 10px;
+	background-color: #c7dbf9;
+	margin: 20px auto;
+	display: block;
+	width: 462px;
+	height: 347px;
+}
+
+.summary {
+	text-align: justify;
+}
+.employer {
+	font-weight: bold;
+	font-size: 28px;
+	border: 1px solid #2b70e2;
+	border-radius: 15px 15px 0 0;
+	background-color: #2b70e2;
+	width: 8em;
+	text-align: center;
+	
+}
+#work, #study, #lang, #soft, #tech, #course  {
+	background-color: #c7dbf9;
+	margin:20px 0;
+	padding-left: 50px;
+	border-radius: 0.5em;
+}
+
+table {
+	margin: 40px auto;
+}
+
+/*/////////////////////////////////////////////////////// TECHNICAL ///////////////////////////////////////////////////////*/
+
+
+#techy {
+	text-align:center;
+	flex-wrap: wrap;
+	align-content: space-around;
+	vertical-align: middle;
+}
+
+
+
+.tech_box {
+	height: 180px;
+	width: 180px;
+	margin: 15px;
+	text-align:center;
+	display: inline-block;
+	padding: 0;
+	align-items: center;
+}
+
+.tech_logo {
+	max-height: 150px;
+	max-width: 150px;
+	margin: 10px;
+}
+
+.tech_popup {
+	position: absolute;
+	z-index: 50;
+	height: 150px;
+	width: 150px;
+	margin: 10px;
+	border-radius: 75px;
+	background-color: rgba(255, 255, 255, 0.85);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.39em;
+	font-weight: bold;
+	
+	
+}
+
+/*//////////////////////////////////////////////////////// COURSES ////////////////////////////////////////////////////////*/
+
+.course_title {
+	font-weight: bold;
+	font-size: 28px;
+	background-color: #adc9f7;
+	border-radius: 0;
+	text-align: center;
+	border: 3px solid #adc9f7;
+	margin: auto;
+	display: block;
+}
+.course_info {
+	margin: 15px;
+	background-color: white;
+	display: block;
+	padding: 0;
+}
+
+.course_box {
+	border: 5px solid #2b70e2;
+	width: 80%;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
+/*/////////////////////////////////////////////////////// LANGUAGES ///////////////////////////////////////////////////////*/
+
+.lang {
+	font-size: 26px;
+	
+}
+.lang_bar {
+	background-color: #c7dbf9;
+	width: 90%;
+	border-radius: 0.5em;
+	align-items: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.lang_lvl {
+	font: 35px;
+	background-color: #2b70e2;
+	border-radius: 0.5em;
+	margin-left: 0;
+	margin-right: auto;
+	text-align: center;
+	color: white;
+	
+}
+
+/*////////////////////////////////////////////////////////   NAV   ////////////////////////////////////////////////////////*/
+
+nav > a {
+	padding: 0 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	color: #2b60b5;
+	text-decoration: none;
+	font-size: 26px;
+}
+
+nav > a:hover {
+	color: black;
+	text-decoration: none;
+}
+
+nav {
+	text-align: center;
+	position: fixed;
+	top: 160px;
+	width: 100%;
+	z-index: 5;
+	background-color: #c7dbf9;
+}
+
+
+/*////////////////////////////////////////////////////////   WORK  ////////////////////////////////////////////////////////*/
+
+.work_exp {
+	border: 3px solid #2b70e2;
+	border-radius: 0 15px 15px 15px;
+	min-width: 500px;
+	max-width: 700px;
+}
+
+.work_pos {
+	background-color: #c7dbf9;
+}
+
+.work_task {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.work_time {
+	font-style: italic;
+	font-weight: lighter;
+	display: block;
+	float:right;
+	width: 200px;
+}
+
+.work_title {
+	display: block;
+	float:left;
+	width: 150px;
+	margin-left: 15px;
+}
+
+.work_box {
+	display: block;
+	margin: 10px auto;
+	min-width: 500px;
+	max-width: 700px;
+}
+
+
+
+/*//////////////////////////////////////////////////////// STUDIES ////////////////////////////////////////////////////////*/
+
+.study_lvl {
+	min-height: 100px;
+	min-width: 100px;
+	border: 1px solid pink;
+	font-size: 38px;
+	color: white;
+	background-color: #2b70e2;
+	border: 1px solid #2b70e2;
+	border-radius: 30px;
+	padding: 5px;
+	margin: auto 17px;
+}
+
+
+.study_info {
+	border-radius: 70px;
+	background-color: #c7dbf9;
+	max-width: 1000px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+	width: 90%;
+	
+}
+
+.study_info > tr,th,td{
+	border: none;
+	padding: 5px;
+	background-color: #c7dbf9;
+	text-align: left;
+}
+
+.study_spa, .study_eng {
+	background-color: #c7dbf9;
+}
+
+.study_year {
+	font-size: 30px;
+	padding-right: 15px;
+}
+
+/*////////////////////////////ASIDE/////////////////////////////*/
+
+aside {
+	padding: 20px;
+	max-width: 380px;
+	min-width: 380px;
+	bottom: 50px;
+	background-color: #2b70e2;
+	border-radius: 10px;
+}
+
+#photo {
+	border: solid #5394fc 5px;
+	border-radius: 160px;
+	text-align: center;
+	margin: 50px auto;
+	background-color: #c7dbf9;
+	height: 410px;
+	width: 310px;
+}
+
+#brief {
+	margin-top: 40px;
+	font-style: italic;
+	padding: 10px;
+	font-weight: lighter;
+	text-align: justify;
+}
+
+.aside_icon {
+	display: flex;
+	float: left;
+	justify-content: center;
+	flex-direction: column;
+	font-weight: bold;
+}
+
+.aside_info {
+	display: flex;
+	float: right;
+	text-align: right;
+	justify-content: center;
+	flex-direction: column;
+}
+.line {
+	border: 10px dotted #003892; 
+	padding: 0; 
+	margin:auto; 
+	width: 90%;
+}
