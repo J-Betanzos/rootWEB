@@ -1,7 +1,5 @@
 $('document').ready(() => { 
 
-	// alert("Welcome! \n \n Thank you for accessing my CV. This is just some information about me and my skills. \n If you would like to ask me anything, please feel free to contact me through contact section. \n \n Have a great navigation! \n Julio Betanzos Garcia");
-
 	$('.tech_popup').hide();
 	$('.course_info').hide();
 	
@@ -25,5 +23,9 @@ $('document').ready(() => {
 		$(this).children('.course_info').slideUp();
 	}
 	
-	
+	/*WELCOME MESSAGE */
+
+	$('.fade_back').on('click', () => {
+		$('.fade_back').fadeOut(900);
+	})
 });

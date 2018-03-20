@@ -6,6 +6,14 @@
 	overflow: hidden;
 }
 
+body {
+	background-color: #c7dbf9;
+	padding: 10px;
+	margin: 0;
+	font-family: 'Barlow Condensed';font-size: 22px;
+	
+}
+
 header {
 	text-align: right;
 	background-image: url("images/It-Background.png");
@@ -20,17 +28,20 @@ header {
 	border-radius: 10px;
 }
 
-
-body {
-	background-color: #c7dbf9;
-	padding: 10px;
-	margin: 0;
-	font-family: 'Barlow Condensed';font-size: 22px;
-	
+a {
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 26px;
+	margin: auto auto;
 }
 
-
-
+a:hover {
+	color: black;
+	text-decoration: none;
+}
+a:visited {
+	color: #6213d8;
+}
 
 .contain {
 	position: fixed;
@@ -40,6 +51,7 @@ body {
 	overflow: scroll;
 	overflow-x: auto;
 }
+
 article {
 	margin-top: 0;
 	padding-top: 0;
@@ -69,20 +81,6 @@ hr {
 	color: #2b70e2;
 }
 
-table {
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	border: 2px solid;
-	background-color: #5394fc;
-}
-
-tr,th,td {
-	border: 1px solid;
-	padding: 5px;
-	background-color: #adc9f7;
-}
-
 li {
 	margin-left: 50px;
 }
@@ -90,11 +88,6 @@ li {
 article > hr {
 	margin: 20px;
 }
-.lang {
-	font-weight: bold;
-}
-
-
 
 #arrow {
 	position: fixed;
@@ -103,22 +96,24 @@ article > hr {
 	z-index: 10;
 }
 
-.tech {
-	font-weight: bold;
-	margin: 10px 0;
-	font-size: 28px;
+
+#work, #study, #lang, #soft, #tech, #course  {
+	background-color: #c7dbf9;
+	margin:20px 0;
+	padding-left: 50px;
+	border-radius: 0.5em;
 }
 
-aside > h2 {
-	margin-top: 40px;
+
+table {
+	text-align: center;
+	margin: 40px auto;
+	border: 2px solid;
+	background-color: #5394fc;
 }
-.lang_lvl {
-	position: relative;
-	margin-left: 70px;
-}
-li > span {
-	line-height: 150%;
-}
+
+/*///////////////////////////////////////////////SOFT*/
+
 .soft {
 	border: solid 5px #1264ea;
 	padding: 5px;
@@ -134,43 +129,11 @@ li > span {
 }
 
 
-iframe {
-	text-align: center;
-	border: solid 5px #1264ea;
-	padding: 5px;
-	border-radius: 10px;
-	background-color: #c7dbf9;
-	margin: 20px auto;
-	display: block;
-	width: 462px;
-	height: 347px;
-}
 
-.summary {
-	text-align: justify;
-}
-.employer {
-	font-weight: bold;
-	font-size: 28px;
-	border: 1px solid #2b70e2;
-	border-radius: 15px 15px 0 0;
-	background-color: #2b70e2;
-	width: 8em;
-	text-align: center;
-	
-}
-#work, #study, #lang, #soft, #tech, #course  {
-	background-color: #c7dbf9;
-	margin:20px 0;
-	padding-left: 50px;
-	border-radius: 0.5em;
-}
 
-table {
-	margin: 40px auto;
-}
 
-/*/////////////////////////////////////////////////////// TECHNICAL ///////////////////////////////////////////////////////*/
+
+/*//////////////////////////////////////////// TECHNICAL*/
 
 
 #techy {
@@ -215,7 +178,7 @@ table {
 	
 }
 
-/*//////////////////////////////////////////////////////// COURSES ////////////////////////////////////////////////////////*/
+/* //////////////////////////////////////////////COURSES */
 
 .course_title {
 	font-weight: bold;
@@ -241,12 +204,33 @@ table {
 	border-radius: 10px;
 }
 
-/*/////////////////////////////////////////////////////// LANGUAGES ///////////////////////////////////////////////////////*/
+td > a {
+	font-size: 1em;
+}
+
+.course_info > table {
+	background-color: white;
+	border: none;
+	border-radius: 30px;
+	text-align: center;
+}
+
+tr > th {
+	background-color: #2b70e2;
+	text-align: center;
+}
+
+tr > td {
+	text-align: center;
+}
+
+/*///////////////////////////////////////////LANGUAGES */
 
 .lang {
+	font-weight: bold;
 	font-size: 26px;
-	
 }
+
 .lang_bar {
 	background-color: #c7dbf9;
 	width: 90%;
@@ -258,6 +242,8 @@ table {
 }
 
 .lang_lvl {
+	position: relative;
+	margin-left: 70px;
 	font: 35px;
 	background-color: #2b70e2;
 	border-radius: 0.5em;
@@ -268,7 +254,7 @@ table {
 	
 }
 
-/*////////////////////////////////////////////////////////   NAV   ////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////NAVIGATION BAR*/
 
 nav > a {
 	padding: 0 30px;
@@ -278,11 +264,6 @@ nav > a {
 	color: #2b60b5;
 	text-decoration: none;
 	font-size: 26px;
-}
-
-nav > a:hover {
-	color: black;
-	text-decoration: none;
 }
 
 nav {
@@ -295,7 +276,7 @@ nav {
 }
 
 
-/*////////////////////////////////////////////////////////   WORK  ////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////WORK EXP*/
 
 .work_exp {
 	border: 3px solid #2b70e2;
@@ -335,9 +316,30 @@ nav {
 	max-width: 700px;
 }
 
+.employer {
+	font-weight: bold;
+	font-size: 28px;
+	border: 1px solid #2b70e2;
+	border-radius: 15px 15px 0 0;
+	background-color: #2b70e2;
+	width: 8em;
+	text-align: center;
+	
+}
 
+/*//////////////////////////////////////////////STUDIES*/
 
-/*//////////////////////////////////////////////////////// STUDIES ////////////////////////////////////////////////////////*/
+iframe {
+	text-align: center;
+	border: solid 5px #1264ea;
+	padding: 5px;
+	border-radius: 10px;
+	background-color: #c7dbf9;
+	margin: 20px auto;
+	display: block;
+	width: 462px;
+	height: 347px;
+}
 
 .study_lvl {
 	min-height: 100px;
@@ -369,11 +371,12 @@ nav {
 	border: none;
 	padding: 5px;
 	background-color: #c7dbf9;
-	text-align: left;
+	
 }
 
 .study_spa, .study_eng {
 	background-color: #c7dbf9;
+	text-align: left;
 }
 
 .study_year {
@@ -389,7 +392,7 @@ nav {
 }
 
 
-/*////////////////////////////ASIDE/////////////////////////////*/
+/*///////////////////////////////////////////////ASIDE*/
 
 aside {
 	padding: 20px;
@@ -400,14 +403,19 @@ aside {
 	border-radius: 10px;
 }
 
+aside > h2 {
+	margin-top: 40px;
+}
+
 #photo {
 	border: solid #5394fc 5px;
 	border-radius: 160px;
 	text-align: center;
-	margin: 50px auto;
+	margin: 0 auto;
 	background-color: #c7dbf9;
 	height: 410px;
 	width: 310px;
+	object-fit: cover;
 }
 
 #brief {
@@ -426,6 +434,13 @@ aside {
 	font-weight: bold;
 }
 
+a > img {
+	height: 45px;
+	width: 45px;
+	border: 3px solid white;
+	border-radius: 10px;
+}
+
 .aside_info {
 	display: flex;
 	float: right;
@@ -433,9 +448,24 @@ aside {
 	justify-content: center;
 	flex-direction: column;
 }
-.line {
-	border: 10px dotted #003892; 
-	padding: 0; 
-	margin:auto; 
-	width: 90%;
+
+/*///////////////////////////////////////////WELCOME */
+
+.fade_back {
+	background-color: rgba(47, 56,  237, 0.7); 
+	z-index: 60; 
+	position: absolute; 
+	height: 100%; 
+	width: 100%
+}
+
+.fade_front {
+	background-color: #9499f7; 
+	z-index: 70; 
+	position: absolute; 
+	left: 20%;
+	right: 20%;
+	top: 30%;
+	padding: 40px;
+	border-radius: 40px;
 }
