@@ -1,0 +1,23 @@
+.head {
+    background-image: url("./images/cracow_main.jpg");
+    height: 500px;
+    border: 5px solid pink;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: center;
+    background-position: 50% 50%;
+    
+}
+
+.info {
+    padding: 30px;
+    text-align: justify;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+
+.summary {
+    background-color: navajowhite;
+}
