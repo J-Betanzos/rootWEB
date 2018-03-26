@@ -10,56 +10,15 @@
 </head>
 
 <body>
-    <div class="fade">
-    </div>
-    <div class="info">
-        <div class="head">
-            <img src="./images/cracow_main.jpg">
-        </div>
-        <div>
-            <div class="summary">
-                <h2>Plaza Mayor</h2>
-                <p>La Plaza del Mercado de Cracovia es la plaza más importante de Cracovia y de Polonia, se sitúa en el casco
-                    antiguo de Cracovia, en el centro de la ciudad. Su origen se remonta al siglo XIII, y tiene alrededor
-                    de 40.000 m². Siendo la plaza medieval más grande de Europa.
-                    <br /> La "Rynek Główny" es una amplia plaza rodeada de casas antiguas e históricas (kamienice), palacios e
-                    iglesias. El centro de la plaza está dominado por el Sukiennice (en su interior, entre otras cosas, hay
-                    un museo de arte Polaca del siglo XIX), reconstruida en 1555 en estilo renacentista, rematada por un
-                    bonito ático o parapeto polaco, decorado con máscaras talladas. A un lado de la Sukiennice está la torre
-                    del ayuntamiento (Wieża Ratuszowa), en el otro lado se localiza la iglesia de San Adalberto (San Wojciech)
-                    del siglo X y, a su lado desde 1898, el monumento a Adam Mickiewicz. Por encima de la plaza resaltan
-                    las torres góticas de la basílica de Santa María (Kościół Mariacki).
-                </p>
-            </div>
-
-            <div id="map"></div>
-        </div>
-        <script>
-            function initMap() {
-                var uluru = { lat: 50.061624, lng: 19.937301 };
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 15,
-                    center: uluru
-                });
-                var marker = new google.maps.Marker({
-                    position: uluru,
-                    map: map
-                });
-            }
-        </script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMcPYiGnMYvgXJhWkSswkCiF0DfLWy7sM&callback=initMap">
-        </script>
-    </div>
     <header>
     </header>
     <article>
-
         <section>
             <div>
                 <h2>Distritos</h2>
                 <div class="container">
                     <span class="miniature">
-                        <a>
+                        <a href=".\distritos\centrum.html" target="_blank">
                             <img src="./images/miniatures/centrum_mini.jpg" alt="Casco Antiguo">
                         </a>
                     </span>
@@ -318,7 +277,7 @@
         </section>
     </article>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMcPYiGnMYvgXJhWkSswkCiF0DfLWy7sM&callback=initMap">
-    </script>
+    </script>    
 </body>
 
 </html>
