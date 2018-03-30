@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../krk_style.css" rel="stylesheet">
+    <title>Good Lood</title>
+</head>
+
+<body style="background-color: rgba(173, 149, 43, 0.7);">
+    <div style="height: 100px"></div>
+    <div class="info">
+        <div class="head">
+            <img src="../images/goodlood.jpg">
+        </div>
+        <div>
+            <div class="summary">
+                <h2>Good Lood</h2>
+                <p>Según el nombre, se supone que su helado es 'bueno' ('lód' significa 'helado' en polaco), lo cual es muy modesto por 
+                    su parte. El primer local que abrieron, en Plač Wolnica, inaugurado el año pasado, fue una sensación casi de la noche 
+                    a la mañana. Al final del verano, la gente hacía cola de casi 1 hora frente a sus 4 lugares en varias partes de la ciudad.
+                    Este año ya estan en 8 ubicaciones diferentes y atraen a una gran multitud. <br /> El helado (y sorbetes) se produce con 
+                    ingredientes naturales y los sabores van desde lo clásico a pequenas maravillas. Estas ultimas pueden parecer más atractivas 
+                    al principio, y son realmente excelentes, tomando como ejemplo rosa, higos y semilla de amapola, pera y martini o requesón 
+                    con mango. Sin embargo, no te dejes engañar: los clásicos (caramelo con sal rosa del Himalaya, nata, chocolate negro, fresa) 
+                    son verdaderos éxitos y merecen tanto elogio o incluso mas. Esos sabores clásicos siempre están en el menú y las otras opciones 
+                    cambian más o menos a diario.   
+                </p>
+            </div>
+
+            <div id="map"></div>
+        </div>
+
+        <script>
+            function initMap() {
+                var uluru = { lat: 50.051614, lng: 19.944839 };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 15,
+                    center: uluru
+                });
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMcPYiGnMYvgXJhWkSswkCiF0DfLWy7sM&callback=initMap">
+        </script>
+    </div>
+    <div style="height: 100px"></div>
+</body>
+
+</html>

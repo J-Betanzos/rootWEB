@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../krk_style.css" rel="stylesheet">
+    <title>Kompania Kuflowa</title>
+</head>
+
+<body style="background-color: rgba(173, 149, 43, 0.7);">
+    <div style="height: 100px"></div>
+    <div class="info">
+        <div class="head">
+            <img src="../images/podwawelem.jpg">
+        </div>
+        <div>
+            <div class="summary">
+                <h2>Kompania Kuflowa</h2>
+                <p>El sitio ideal si buscas alcanzar su cuota calórica diaria en una sola comida. Enormes porciones de comida polaca
+                    estándar caen en cascada de las ollas de acero y tablas de madera en las que se sirven, mientras que
+                    el personal uniformado se desliza entre los bancos sirviendo jarras de cerveza con espuma. Las cervezas
+                    las sirven de litro, y hay un práctico "vomitorium" en la habitación de los hombres, es decir, dos enormes
+                    cubas de acero para aquellos que sufren de sobreconsumo.
+                </p>
+            </div>
+
+            <div id="map"></div>
+        </div>
+
+        <script>
+            function initMap() {
+                var uluru1 = { lat: 50.061624, lng: 19.937301 };
+                var uluru2 = { lat: 50.054695, lng: 19.939314 };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 15,
+                    center: { lat: 50.058159, lng: 19.938308 }
+                });
+                var marker1 = new google.maps.Marker({
+                    position: uluru1,
+                    map: map
+                });
+                var marker2 = new google.maps.Marker({
+                    position: uluru2,
+                    map: map
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMcPYiGnMYvgXJhWkSswkCiF0DfLWy7sM&callback=initMap">
+        </script>
+    </div>
+    <div style="height: 100px"></div>
+</body>
+
+</html>

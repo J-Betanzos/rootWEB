@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../krk_style.css" rel="stylesheet">
+    <title>Dolnych Młynów</title>
+</head>
+
+<body style="background-color: rgba(173, 149, 43, 0.7);">
+    <div style="height: 100px"></div>
+    <div class="info">
+        <div class="head">
+            <img src="../images/dolnych.jpg">
+        </div>
+        <div>
+            <div class="summary">
+                <h2>Dolnych Młynów</h2>
+                <p>Dolnych Młynów fue una antigua fabrica abandonada que ha sido 'restaurada'. Ahora es una plaza al norte del casco antiguo 
+                    de Cracovia donde se acumulan varios lugares como <i>Weźże Krafta</i>, donde se puede elegir entre 25 cervezas de grifo, 
+                    o <i>Veganic</i>, un restaurante completamente vegano. Tiene un ambiente muy caracteristico y lleno de vida en las noches 
+                    de verano.
+                </p>
+            </div>
+
+            <div id="map"></div>
+        </div>
+
+        <script>
+            function initMap() {
+                var uluru = { lat: 50.064797, lng: 19.926368 };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 15,
+                    center: uluru
+                });
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMcPYiGnMYvgXJhWkSswkCiF0DfLWy7sM&callback=initMap">
+        </script>
+    </div>
+    <div style="height: 100px"></div>
+</body>
+
+</html>
