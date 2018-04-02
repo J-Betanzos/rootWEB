@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../krk_style.css" rel="stylesheet">
+    <title>Mr. Pancake</title>
+</head>
+
+<body style="background-color: rgba(173, 149, 43, 0.7);">
+    <div style="height: 100px"></div>
+    <div class="info">
+        <div class="head">
+            <img src="../images/pancake.jpg">
+        </div>
+        <div>
+            <div class="summary">
+                <h2>Mr. Pancake</h2>
+                <p>Un templo para la indulgencia estadounidense, el Mr.Pancake va de la mano con un menú revitalizador de hamburguesas, 
+                    pancakes y batidos que debilitan el corazón. Este territorio ha sido pisoteado anteriormente (prácticamente pisoteado, 
+                    de hecho), pero Mr.Pancake lo lleva a nuevos extremos de posibilidades calóricas, incorporando productos estadounidenses 
+                    de "alimentos" como Pop Tarts, Marshmallow Fluff y M & M en inventos de menú como panqueques Oreo (con desmenuzado 
+                    galletas en el batido actual) y panqueques 'Brownie Pop' (con Nutella, Pop Tarts, jarabe de Hershey y helado). 
+                    Fuimos a la ruta de tortitas 'Egg & Bacon', y en realidad terminamos deseando más huevos y tocino. Aún así, a pesar de los 
+                    crudos hashtags como #foodporn y #fuckdiet (que revelan que este lugar no es súper adecuado para los niños), admitiremos que 
+                    disfrutamos del concepto de obstrucción de las arterias, y las hamburguesas son geniales. Junto a él se encuentra la barra 
+                    Bifor (que a veces alberga DJs y permanece abierta más tarde los viernes, sábados), donde puedes preparar un brebaje y escuchar 
+                    a Kendrick Lamar, o, más apropiadamente, pedir un Dr. Pepper y pasar un rato con tus amigos tratando averiguar exactamente qué 
+                    es exactamente esa bebida ...   
+                </p>
+            </div>
+
+            <div id="map"></div>
+        </div>
+
+        <script>
+            function initMap() {
+                var uluru = { lat: 50.064557, lng: 19.927538 };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 15,
+                    center: uluru
+                });
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMcPYiGnMYvgXJhWkSswkCiF0DfLWy7sM&callback=initMap">
+        </script>
+    </div>
+    <div style="height: 100px"></div>
+</body>
+
+</html>

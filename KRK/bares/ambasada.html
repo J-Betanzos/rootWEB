@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../krk_style.css" rel="stylesheet">
+    <title>Ambasada Śledzia </title>
+</head>
+
+<body style="background-color: rgba(173, 149, 43, 0.7);">
+    <div style="height: 100px"></div>
+    <div class="info">
+        <div class="head">
+            <img src="../images/ambasada.jpg">
+        </div>
+        <div>
+            <div class="summary">
+                <h2>Ambasada Śledzia </h2>
+                <p>LLamada asi debido a su situacion en la 'calle de las embajadas', frente a las embajadas francesas y de los USA.
+                    Hay vodka y arenques en cada esquina de Cracovia en estos días, y vamos a seguir culpando a Ambasada Śledzia 
+                    por esta moda del pescado. Primero, y si juzgamos por la comida, también son los mejores. En caso de que se 
+                    lo pregunte, el arenque en escabeche (śledź) es un "manjar" en estas partes, de la misma manera que el vodka 
+                    es el lenguaje local para "medicina". Los dos van muy bien juntos y combinados es una aventura barata con la 
+                    cultura culinaria extranjera. Cuando se cierran las principales "Embajadas de arenque", las travesuras nocturnas 
+                    continúan en uno de sus dos locales secundarios (Śledź U Fryzjera y Mały śledż).
+                </p>
+            </div>
+
+            <div id="map"></div>
+        </div>
+
+        <script>
+            function initMap() {
+                var uluru1 = { lat: 50.060008, lng: 19.939093 };
+                var uluru2 = { lat: 50.060368, lng: 19.939227 };
+                var uluru3 = { lat: 50.051281, lng: 19.943593 };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 14,
+                    center: { lat: 50.057219, lng: 19.940638 }
+                });
+                var marker1 = new google.maps.Marker({
+                    position: uluru1,
+                    map: map
+                });
+                var marker2 = new google.maps.Marker({
+                    position: uluru2,
+                    map: map
+                });
+                var marker3 = new google.maps.Marker({
+                    position: uluru3,
+                    map: map
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMcPYiGnMYvgXJhWkSswkCiF0DfLWy7sM&callback=initMap">
+        </script>
+    </div>
+    <div style="height: 100px"></div>
+</body>
+
+</html>
