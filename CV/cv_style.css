@@ -52,7 +52,7 @@ a:visited {
 	overflow-x: auto;
 }
 
-article {
+main {
 	margin-top: 0;
 	padding-top: 0;
 	padding: 10px 30px;
@@ -85,7 +85,7 @@ li {
 	margin-left: 50px;
 }
 
-article > hr {
+main > hr {
 	margin: 20px;
 }
 
