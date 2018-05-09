@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>DB input</title>
+		<link href="style.css" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Barlow Condensed' rel='stylesheet'>
+	</head>
+	<body>
+		<header>
+			
+        </header>
+        <section>
+            
+            <label class="type" for="type">
+                <span>Input type:</span>
+                <span><span>Book</span><input name="type" type="radio" value="Book"></span>
+                <span><span>Comic</span><input name="type" type="radio" value="Comic"></span>
+                <span><span>Film</span><input name="type" type="radio" value="Film"></span>
+                <span><span>Video Game</span><input name="type" type="radio" value="Video Game"></span>
+            </label>
+
+        </section>
+        <br />
+        <form id="comic">
+        <section>
+            
+            <label for="name">
+                <span>Full name:</span>
+                <input id="name" type="text" placeholder="Star Wars #1">
+            </label>
+
+            <label for="genre">
+                <span>Genre:</span>
+            
+            <select>
+                <option>Superheroes</option>
+                <option>Noire</option>
+                <option>Science Fiction</option>
+                <option>Comedy</option>
+                <option>Child</option>
+                <option>Phantasy & Adventure</option>
+                <option>Horror</option>
+                <option>War</option>
+                <option>History</option>
+            </select>
+        </label>
+
+            <label for="saga">
+                <span>Saga:</span>
+                <input id="saga" type="text" placeholder="Star Wars">
+            </label>
+
+            </section>
+            <br />
+		    <section>
+
+            <label for="publisher">
+                <span>Publisher:</span>
+                <input id="publisher" type="text" placeholder="Planeta DeAgostini Cómics">
+            </label>
+
+            <label for="script">
+                <span>Script:</span>
+                <input id="script" type="text" placeholder="Jason Aaron">
+            </label>
+
+            <label for="pencils">
+                <span>Pencils:</span>
+                <input id="pencils" type="text" placeholder="John Cassady">
+            </label>
+
+            <label for="inks">
+                <span>Inks:</span>
+                <input id="inks" type="text">
+            </label>
+
+            <label for="letters">
+                <span>Letters:</span>
+                <input id="letters" type="text">
+            </label>
+
+            </section>
+            <br />
+		    <section>   
+
+            <label for="format">
+                <span>Format:</span>
+            
+            <select> <!-- https://www.cuartomundo.cl/2014/11/07/formatos-de-comics/ -->
+                <option>Fanzine</option>
+                <option>Grapa</option>
+                <option>Retapado</option>
+                <option>Rustica</option>
+                <option>Prestigio</option>
+                <option>De bolsillo</option>
+                <option>Tapadura</option>
+                <option>Integral</option>
+                <option>Oversized</option>
+                <option>Absolute</option>
+                <option>Box</option>
+            </select>
+        </label>
+
+            <label for="pages">
+                <span># of pages:</span>
+                <input id="pages" type="text" maxlength="4" placeholder="48" oninput="this.value=this.value.replace(/[^0-9]/g,'');" inputmode="numeric">
+            </label>
+
+            <label for="high">
+                <span>High:</span>
+                <input id="high" type="text" maxlength="3" oninput="this.value=this.value.replace(/[^0-9]/g,'');"  inputmode="numeric">
+                <span>mm</span>
+            </label>
+
+            <label for="width">
+                <span>Width:</span>
+                <input id="width" type="text" maxlength="3" oninput="this.value=this.value.replace(/[^0-9]/g,'');" inputmode="numeric">
+                <span>mm</span>
+            </label>
+
+            <label for="lang">
+                <span>Language:</span>
+                <input id="lang" type="text" placeholder="Spanish">
+            </label>
+
+            </section>
+            <br />
+		    <section>
+
+            <label for="isbn13">
+                <span>ISBN-13:</span>
+                <input id="isbn3" type="text" placeholder="978" maxlength="3" oninput="this.value=this.value.replace(/[^0-9]/g,'');" inputmode="numeric">
+                <span>-</span>
+                <input id="isbn10" type="text" placeholder="8416308149" maxlength="10" oninput="this.value=this.value.replace(/[^0-9]/g,'');" inputmode="numeric">
+            </label>
+
+            <label for="barcode">
+                <span>Barcode:</span>
+                <input id="barcode" type="text" placeholder="9788416308149"  maxlength="13" oninput="this.value=this.value.replace(/[^0-9]/g,'');" inputmode="numeric">
+            </label>
+
+        </section>
+        <div id="submitbutton">
+            <input id="submit" type="submit">
+        </div>
+    </form>       
+	</body>
+</html>
