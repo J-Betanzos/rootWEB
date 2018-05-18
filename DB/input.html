@@ -10,24 +10,25 @@
 		<header>
 			
         </header>
-        <section>
+        <fieldset>
+            <legend>Input type</legend>
             
-            <label class="type" for="type">
-                <span>Input type:</span>
+            <label class="type" for="type" required>
                 <span><span>Book</span><input name="type" type="radio" value="Book"></span>
                 <span><span>Comic</span><input name="type" type="radio" value="Comic"></span>
                 <span><span>Film</span><input name="type" type="radio" value="Film"></span>
                 <span><span>Video Game</span><input name="type" type="radio" value="Video Game"></span>
             </label>
 
-        </section>
+        </fieldset>
         <br />
         <form id="comic">
-        <section>
+        <fieldset>
+                <legend>Designation</legend>
             
             <label for="name">
                 <span>Full name:</span>
-                <input id="name" type="text" placeholder="Star Wars #1">
+                <input id="name" type="text" placeholder="Star Wars #1" required>
             </label>
 
             <label for="genre">
@@ -51,9 +52,10 @@
                 <input id="saga" type="text" placeholder="Star Wars">
             </label>
 
-            </section>
+            </fieldset>
             <br />
-		    <section>
+		    <fieldset>
+                    <legend>People involved</legend>
 
             <label for="publisher">
                 <span>Publisher:</span>
@@ -80,9 +82,10 @@
                 <input id="letters" type="text">
             </label>
 
-            </section>
+            </fieldset>
             <br />
-		    <section>   
+		    <fieldset>
+                    <legend>Physical description</legend>   
 
             <label for="format">
                 <span>Format:</span>
@@ -121,12 +124,30 @@
 
             <label for="lang">
                 <span>Language:</span>
-                <input id="lang" type="text" placeholder="Spanish">
+                <input list="lang" name="language" placeholder="Spanish" required>
+                <datalist id="lang">
+                    <option value="Spanish">
+                    <option value="English">    
+                </datalist>
             </label>
 
-            </section>
             <br />
-		    <section>
+            <br />
+
+            <label for="wishlist">
+                <input id="wishlist" type="checkbox" value="wishlist">
+                <span>Whishlist</span>
+            </label>
+
+            <label for="owned">
+                <input id="owned" type="checkbox" value="owned">
+                <span>Owned</span>
+            </label>
+
+            </fieldset>
+            <br />
+		    <fieldset>
+                    <legend>Back-end designation</legend>
 
             <label for="isbn13">
                 <span>ISBN-13:</span>
@@ -139,11 +160,24 @@
                 <span>Barcode:</span>
                 <input id="barcode" type="text" placeholder="9788416308149"  maxlength="13" oninput="this.value=this.value.replace(/[^0-9]/g,'');" inputmode="numeric">
             </label>
+            <br />
+            <br />
 
-        </section>
+            <label for="amazon">
+                <span>Amazon URL:</span>
+                <input id="amazon" type="url" placeholder="http://www.amazon.com/" name="amazon">
+            </label>
+
+        </fieldset>
         <div id="submitbutton">
-            <input id="submit" type="submit">
+            <button type="reset">Clear Form</button>
+            <input id="submit" type="submit" value="Submit">
         </div>
     </form>       
+
+    <form id="film">
+
+    </form>
+    
 	</body>
 </html>
