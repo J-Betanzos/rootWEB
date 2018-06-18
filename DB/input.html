@@ -6,20 +6,21 @@
         <link href="normalize.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Barlow Condensed' rel='stylesheet'>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
         <script src="script.js"></script>
 	</head>
 	<body>
-		<header>
+		<header id="head">
 			
         </header>
         <fieldset>
             <legend>Input type</legend>
             
             <label id="type" for="type" required>
-                <input name="type" type="radio" value="Book"><span>Book</span>
-                <input name="type" type="radio" value="Comic"><span>Comic</span>
-                <input name="type" type="radio" value="Film"><span>Film</span>
-                <input name="type" type="radio" value="Video Game"><span>Video Game</span>
+                <label id="book_type"><input name="type" type="radio" value="Book"><span>Book</span></label>
+                <label id="comic_type"><input name="type" type="radio" value="Comic"><span>Comic</span></label>
+                <label id="film_type"><input name="type" type="radio" value="Film"><span>Film</span></label>
+                <label id="game_type"><input name="type" type="radio" value="Video Game"><span>Video Game</label></span>
             </label>
 
         </fieldset>

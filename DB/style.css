@@ -6,12 +6,28 @@ html {
 
 header {
     height: 200px;
-    background-image: url("comic_bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     vertical-align: center;
     background-position: 50% 50%;
 }
+
+.comic_bg {
+    background-image: url("comic_bg.jpg");
+}
+
+.book_bg {
+    background-image: url("book_bg.jpg");
+}
+
+.film_bg {
+    background-image: url("film_bg.jpg");
+}
+
+.game_bg {
+    background-image: url("game_bg.png");
+}
+
 fieldset {
     border: 2px solid black;
     background-color: white;
