@@ -1,5 +1,5 @@
 * {
-    background-color: navajowhite;
+    
     position: relative;
     padding: 0;
     margin: 0;
@@ -101,6 +101,10 @@ a {
     color: inherit;
 }
 
+footer {
+    height: 100px;
+}
+
 /*//////////FADE PAGE//////////FADE PAGE//////////FADE PAGE*/
 
 .fade {
@@ -157,4 +161,13 @@ a {
 .zoom {
     transform: scale(1.5);
     border: 5px solid pink;
+}
+
+/*//////////ADVICE//////////ADVICE//////////ADVICE*/
+
+li {
+    font-size: 1.6em;
+    text-align: center;
+    margin: 30px;
+    letter-spacing: 2px;
 }

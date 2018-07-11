@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../krk_style.css" rel="stylesheet">
+    <title>Museo Nacional de Cracovia</title>
+</head>
+
+<body style="background-color: rgba(173, 149, 43, 0.7);">
+    <div style="height: 100px"></div>
+    <div class="info">
+        <div class="head">
+            <img src="../images/national.jpg">
+        </div>
+        <div>
+            <div class="summary">
+                <h2>Museo Nacional de Cracovia</h2>
+                <p>El Edificio Principal, diseñado por Czesław Boratyński, Edward Kreisler y Bolesław Schmidt, se construyó 
+                    con interrupciones entre los años 1934 y 1989.<br />El museo alberga tres galerías permanentes:<br />
+                        Galería del Arte Polaco del siglo XX – la colección de este tipo de arte más amplia de Polonia. Aquí, los visitantes pueden conocer los fenómenos seleccionados del arte polaco del siglo pasado y el actual (desde la Joven Polonia hasta los tiempos contemporáneos);
+                        <br />
+                        Galería de la Artesanía Artística – la mayor exposición permanente de este tipo en Polonia, con colección que presenta la riqueza de la artesanía artística polaca y de Europa Occidental, desde la temprana Edad Media hasta el modernismo (completada por una impresionante colección de objetos relacionados con la tradición judía);
+                        <br />
+                        Galería de Armas de Polonia – presenta una de las colecciones más amplias y valiosas de los objetos militares polacos, derivados desde la Edad Media hasta la Segunda Guerra Mundial.
+                </p>
+            </div>
+
+            <div id="map"></div>
+        </div>
+        
+        <script>
+            function initMap() {
+                var uluru = { lat: 50.060458, lng: 19.923763 };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 15,
+                    center: uluru
+                });
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMcPYiGnMYvgXJhWkSswkCiF0DfLWy7sM&callback=initMap">
+        </script>
+    </div>
+    <div style="height: 100px"></div>
+</body>
+
+</html>
