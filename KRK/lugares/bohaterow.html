@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../krk_style.css" rel="stylesheet">
+    <title>Plaza heroes del guetto</title>
+</head>
+
+<body style="background-color: rgba(173, 149, 43, 0.7);">
+    <div style="height: 100px"></div>
+    <div class="info">
+        <div class="head">
+            <img src="../images/bohaterow.jpg">
+        </div>
+        <div>
+            <div class="summary">
+                <h2>Plaza heroes del guetto</h2>
+                <p>Planeado por primera vez en 1836, esta plaza pública al otro lado del río desde el puente 
+                    Powstańców Śląskich ha tenido una historia turbulenta, con giros como un mercado, establo 
+                    de caballos, sitio de ejecución, parada de taxis y terminal de autobuses a lo largo de los 
+                    años. Durante la época del Ghetto de Cracovia, fue a la vez la fuente del mayor alivio de 
+                    los residentes y también la escena de sus mayores horrores y humillaciones. Como el espacio 
+                    abierto más grande del ghetto, Plac Zgody era un lugar para que las personas socializaran, 
+                    relajaran y escaparan de la opresiva sobrepoblación de los conventillos. También fue el 
+                    lugar donde se destrozaron familias, deportaciones masivas a los campos de la muerte, 
+                    palizas y ejecuciones. Tras las deportaciones y la liquidación final del ghetto, Plac Zgody 
+                    estaba cubierto de muebles, ropa, equipaje y otras pertenencias que las víctimas se habían 
+                    visto obligadas a abandonar; esta imagen más tarde inspiraría el rediseño de la plaza. 
+                    Aunque después de la guerra el nombre de Plac Zgody se cambió a Plac Bohaterów Getta (Plaza 
+                    de los Héroes del Ghetto) y se erigió un pequeño monumento, la importancia histórica del 
+                    espacio nunca se sintió más pertinente que su uso de la posguerra como baño público o 
+                    estacionamiento. Finalmente, después de décadas de abandono, Plac Bohaterów Getta fue 
+                    renovado en 2005, lo que generó una gran controversia sobre el diseño. Arreglado con 70 
+                    grandes sillas de metal bien espaciadas que simbolizan la partida, así como la posterior 
+                    ausencia, la plaza entera se ha convertido esencialmente en un monumento extraño, pero 
+                    icónico a las víctimas del Ghetto de Cracovia. Se creó un lugar para las velas y la 
+                    reflexión en la antigua caseta de vigilancia alemana en el extremo norte de la plaza, sin 
+                    embargo, el gesto suena hueco, teniendo en cuenta que el espacio siempre está cerrado.
+                    <br />
+                    Durante la guerra, Plac Bohaterów Getta 6 fue el punto de encuentro habitual de la 
+                    Organización de Combate Judío (ŻOB), como lo señala una placa en la parte delantera del 
+                    edificio. La resistencia clandestina judía de Cracovia orquestó actos de sabotaje fuera del 
+                    ghetto, y su mayor éxito se produjo en diciembre de 1942 cuando una granada detonó dentro 
+                    del Cyganeria Café, un popular lugar de reunión para oficiales nazis en ul. Szpitalnia: 
+                    matando e hiriendo a varios alemanes. Plac Bohaterów Getta 18 - en el lado sur de la plaza 
+                    en la esquina de ul. Targowa - fue el sitio del famoso Apteka Pod Orłem de Pankiewicz, ahora 
+                    una rama del Museo de Historia de Cracovia con exhibiciones que representan la vida en el 
+                    gueto. Cada año, el domingo siguiente a la liquidación del gueto del 14 de marzo, un desfile 
+                    conmemorativo en honor a las víctimas se inicia desde Plac Bohaterów Getta hasta el monumento 
+                    al Holocausto en el sitio del antiguo campamento de Plaszow.
+                    
+                </p>
+            </div>
+
+            <div id="map"></div>
+        </div>
+        
+        <script>
+            function initMap() {
+                var uluru = { lat: 50.046750, lng: 19.954368 };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 15,
+                    center: uluru
+                });
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMcPYiGnMYvgXJhWkSswkCiF0DfLWy7sM&callback=initMap">
+        </script>
+    </div>
+    <div style="height: 100px"></div>
+</body>
+
+</html>
