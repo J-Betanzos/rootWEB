@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../krk_style.css" rel="stylesheet">
+    <title>Antigua Sinagoga</title>
+</head>
+
+<body style="background-color: rgba(173, 149, 43, 0.7);">
+    <div style="height: 100px"></div>
+    <div class="info">
+        <div class="head">
+            <img src="../images/old.jpg">
+        </div>
+        <div>
+            <div class="summary">
+                <h2>Antigua Sinagoga</h2>
+                <p> Se trata de la sinagoga más antigua de Cracovia, construida probablemente tras el éxodo 
+                    obligatorio de los judíos cracovianos a Kazimierz (decreto del rey Juan I Alberto 
+                    Jagellón de 1495).<br /> Su edificio original de ladrillo y piedra, que colindaba en la 
+                    parte oriental con las murallas defensivas, se quemó en el año 1557. Gracias al permiso 
+                    del rey Segismundo II Augusto Jagellón, poco tiempo después la comunidad pudo empezar a 
+                    reconstruir el templo. Las obras fueron dirigidas por el constructor florentino, Matteo 
+                    Gucci.<br />Finalizada la reconstrucción, en 1570, se añadió el coro (desde la parte 
+                    meridional) y desde la parte septentrional, una sala de mujeres. Se conservó el carácter 
+                    gótico de la construcción, enriquecido por los elementos renacentistas tales como un alto 
+                    remate en ático, ventanas rematadas en semicírculo o columnas toscanas en el interior.<br />
+                    A lo largo de los siguientes siglos, la sinagoga fue destruida varias veces por incendios 
+                    o robos bajo las turbulencias bélicas. Aunque en cada ocasión era renovada, sufrió una 
+                    lenta degradación. Las reconstrucciones completas fueron realizadas en el año 1888 (reconstrucción 
+                    de los techos, entre otras) y entre los años 1904 y 1913. En 1923, se bajó el terreno 
+                    alrededor de la sinagoga hasta el nivel del siglo XV y en las instalaciones reconstruidas 
+                    por encima del vestíbulo frontal se realizó un pequeño museo de la sinagoga.<br />Tras los 
+                    daños ocasionados por los nazis durante la Segunda Guerra Mundial (se derribó incluso la 
+                    bóveda gótica y las columnas renacentistas), entre los años 1956 y 1959 se realizaron obras 
+                    que en parte recuperaron el antiguo esplendor de la sinagoga. A su vez, la Congregación 
+                    Religiosa de los Judíos traspasó este monumento al Museo Histórico de Cracovia con el fin de 
+                    organizar aquí una exposición permanente relativa a la historia y la cultura de los judíos 
+                    cracovianos. La Sinagoga Antigua desempeña esta función hasta día de hoy.<br /> En el interior, 
+                    la sala de hombres, que consta de dos naves y tres tramos, fue cubierta parcialmente por la 
+                    reconstruida bóveda de crucería y arista, apoyada sobre las columnas toscanas recuperadas. 
+                    Se conservó el Arón Ha-Kodesh de piedra (armario central donde se guardan los rollos de la Torá) 
+                    del siglo XVI, con un rico remate manierista. En la sala de mujeres, merece la pena fijarse en la 
+                    bóveda de cañón decorada con estucos.<br /> A lo largo de los siglos, la Sinagoga Antigua, 
+                    el templo principal de los judíos de Kazimierz, fue centro de los acontecimientos importantes 
+                    para la historia de Polonia. Es aquí donde Tadeusz Kościuszko incitó a los judíos a participar 
+                    en la Insurrección de 1794 y el rabino Beer Meisels, a apoyar las tendencias independentistas 
+                    durante la Primavera de los Pueblos en 1848. Aquí también se dio la bienvenida al presidente de 
+                    la República de Polonia Ignacy Mościcki durante su visita a Cracovia (1927, las fotografías de 
+                    esta celebración se puede ver en la exposición en el interior de la sinagoga).
+                </p>
+            </div>
+
+            <div id="map"></div>
+        </div>
+        
+        <script>
+            function initMap() {
+                var uluru = { lat: 50.051490, lng: 19.948583 };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 15,
+                    center: uluru
+                });
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMcPYiGnMYvgXJhWkSswkCiF0DfLWy7sM&callback=initMap">
+        </script>
+    </div>
+    <div style="height: 100px"></div>
+</body>
+
+</html>

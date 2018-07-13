@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../krk_style.css" rel="stylesheet">
+    <title>La plaza Judia</title>
+</head>
+
+<body style="background-color: rgba(173, 149, 43, 0.7);">
+    <div style="height: 100px"></div>
+    <div class="info">
+        <div class="head">
+            <img src="../images/szeroka.jpg">
+        </div>
+        <div>
+            <div class="summary">
+                <h2>La plaza Judia / Calle ancha</h2>
+                <p>La propia 'Calle ancha' de Cracovia (como dice la línea de apertura favorita 
+                    de los guías turísticos locales) puede diferir considerablemente de su doppelnamer 
+                    de la ciudad de Nueva York, pero el apodo cabe; la calle es tan ancha que en 
+                    realidad funciona más como una plaza alargada. De hecho, ulica Szeroka sirvió originalmente 
+                    como el centro de un pequeño pueblo del siglo XII conocido como Bawół, que fue absorbido 
+                    por Kazimierz en 1340, pocos años después de que este último recibiera su carta. A 
+                    finales del siglo XV, los judíos desterrados de Cracovia comenzaron a asentarse en la 
+                    zona, lo que le dio un lugar permanente en la historia judía local. Alberga tres de las 
+                    sinagogas sobrevivientes de Cracovia y una división de restaurantes de alta calidad y de 
+                    turistas. Ul. Szeroka es hoy el epicentro del turismo de herencia judía en Cracovia; Los 
+                    principales puntos de interés incluyen la sinagoga vieja del siglo XV, la sinagoga y 
+                    cementerio Remuh del siglo XVI, la sinagoga Popper del siglo XVII y un baño judío del 
+                    siglo XVI (mikvah) ubicado en el sótano del hotel y restaurante Klezmer Hois. <br /> Una 
+                    extraña leyenda está ligada al pequeño pedazo de verde en el extremo norte de la calle, 
+                    que fue tapiado alguna vez a través de las edades sin ninguna razón aparente para los 
+                    lugareños de principios del siglo XX. De acuerdo con una historia que se perpetuó antes 
+                    de la Segunda Guerra Mundial, una boda insubordinada tuvo lugar allí tarde un viernes, 
+                    con juerguistas haciendo caso omiso de las peticiones del rabino de partir a medida que 
+                    se acercaba el sábado; Sintiéndose despreciado, el rabino lanzó una maldición sumergiendo 
+                    el lugar de la boda bajo tierra y borrando a los recién casados ​​y a todos sus invitados. 
+                    Pregúntele a un historiador, sin embargo, y es más probable que le digan que la parcela 
+                    de tierra era probablemente un pequeño cementerio utilizado para enterrar a los que 
+                    perecieron a causa de la peste. Hoy se ha convertido en un monumento y "Lugar de 
+                    meditación sobre el martirio de 65,000 ciudadanos polacos de nacionalidad judía de 
+                    Cracovia", como explica un gran monumento de piedra.                    
+                </p>
+            </div>
+
+            <div id="map"></div>
+        </div>
+        
+        <script>
+            function initMap() {
+                var uluru = { lat: 50.052148, lng: 19.948254 };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 15,
+                    center: uluru
+                });
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMcPYiGnMYvgXJhWkSswkCiF0DfLWy7sM&callback=initMap">
+        </script>
+    </div>
+    <div style="height: 100px"></div>
+</body>
+
+</html>

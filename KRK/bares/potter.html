@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../krk_style.css" rel="stylesheet">
+    <title>El caldero chorreante</title>
+</head>
+
+<body style="background-color: rgba(173, 149, 43, 0.7);">
+    <div style="height: 100px"></div>
+    <div class="info">
+        <div class="head">
+            <img src="../images/potter.jpg">
+        </div>
+        <div>
+            <div class="summary">
+                <h2>El caldero chorreante</h2>
+                <p>En la bodega de la calle Grodzka, el bar 'el caldero chorreante' (en polaco "Dziórawy Kocioł") ha estado funcionando 
+                    durante un corto tiempo. El nombre se refiere a la cafetería del libro de Harry Potter, 
+                    en la que los magos jóvenes bebían cervezas cremosas y jugo de calabaza. El dueño del café 
+                    se encargó de la decoración mágica y el menú encantado. - Todos los que han leído o visto 
+                    Harry Potter sueña con probar una cremosa cerveza sin alcohol. La receta es nuestra, basada 
+                    en leche, caramelo, sonrisa del cantinero y varios ingredientes mágicos - explica Przemysław 
+                    Hus, el dueño del local.<br />A pesar de que el lugar está abierto en menos de tres meses, no 
+                    hay escasez de clientes. En el restaurante puedes ver escobas colgantes, jugar juegos de mesa 
+                    mágicos o leer las historias de culto de un mago extraordinario.
+                </p>
+            </div>
+
+            <div id="map"></div>
+        </div>
+
+        <script>
+            function initMap() {
+                var uluru = { lat: 50.057449, lng: 19.938150 };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 16,
+                    center: uluru
+                });
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMcPYiGnMYvgXJhWkSswkCiF0DfLWy7sM&callback=initMap">
+        </script>
+    </div>
+    <div style="height: 100px"></div>
+</body>
+
+</html>
