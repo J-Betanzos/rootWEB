@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../krk_style.css" rel="stylesheet">
+    <title>Basílica de San Francisco de Asís</title>
+</head>
+
+<body style="background-color: rgba(173, 149, 43, 0.7);">
+    <div style="height: 100px"></div>
+    <div class="info">
+        <div class="head">
+            <img src="../images/asis.jpg">
+        </div>
+        <div>
+            <div class="summary">
+                <h2>Basílica de San Francisco de Asís</h2>
+                <p>La basílica de San Francisco de Asís (en polaco: Bazylika św. Franciszka z Asyżu w 
+                    Krakowie) es una iglesia de culto católico y estilo gótico, situada en el centro 
+                    histórico de Cracovia, Polonia, en la calle Franciszkańska y la plaza de Todos los 
+                    Santos. <br /> Fue una de las primeras construcciones de ladrillo y se conserva 
+                    como una de las iglesias más antiguas de la ciudad. El edificio tuvo varias 
+                    remodelaciones y ampliaciones entre los siglos, por lo que presenta una peculiar 
+                    mezcla compuesta por diferentes estilos, pero sigue manteniéndose la estructura 
+                    de su construcción de la época. El templo fue declarado basílica menor el 23 de 
+                    febrero de 1920 por el papa Benedicto XV. <br /> La orden de los franciscanos llegó 
+                    a la ciudad en 1237 de Praga gracias a la diligencias del príncipe Enrique el Piadoso. 
+                    La iglesia fue construida entre los años 1237 y 1269 por la fundación del Boleslao el 
+                    Casto, cuya tumba se encuentra en una capilla de iglesia. Al lado los franciscanos 
+                    construyeron el monasterio. La construcción fue expandida a lo largo del siglo XV, 
+                    agregando las ápsides de tres lados y la parte central en forma de cruz. El templo 
+                    fue repetidas veces destruido por los grandes incendios (en 1462, 1476, 1655 y 1850).
+                    Una de las ocho iglesias franciscanas de Polonia que sobrevivieron a las Particiones. 
+                    Durante la ocupación alemana la Basílica funcionó como sede del obispo.
+                </p>
+            </div>
+
+            <div id="map"></div>
+        </div>
+        
+        <script>
+            function initMap() {
+                var uluru = { lat: 50.059122, lng: 19.935588 };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 15,
+                    center: uluru
+                });
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMcPYiGnMYvgXJhWkSswkCiF0DfLWy7sM&callback=initMap">
+        </script>
+    </div>
+    <div style="height: 100px"></div>
+</body>
+
+</html>
